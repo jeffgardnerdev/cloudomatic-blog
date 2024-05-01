@@ -13,6 +13,11 @@ module.exports = {
 				success: '#0070f3',
 				cyan: '#79FFE1',
 				primary: colors.blue,
+				background: '#F5F5F5',
+				'brand-lighter': '#AEDEFC',
+				'brand': '#191970',
+				'brand-mid': '#4F73B5',
+				'brand-gray': '#525252',
 			},
 			typography: () => ({
 				DEFAULT: {
