@@ -86,23 +86,23 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 			<Layout>
 				<Head>
 					<title>
-						{publication.displayTitle || publication.title || 'Hashnode Blog Starter Kit'}
+						{publication.displayTitle || publication.title}
 					</title>
 					<meta
 						name="description"
 						content={
-							publication.descriptionSEO || publication.title || `${publication.author.name}'s Blog`
+							publication.descriptionSEO || publication.title
 						}
 					/>
 					<meta property="twitter:card" content="summary_large_image" />
 					<meta
 						property="twitter:title"
-						content={publication.displayTitle || publication.title || 'Hashnode Blog Starter Kit'}
+						content={publication.displayTitle || publication.title}
 					/>
 					<meta
 						property="twitter:description"
 						content={
-							publication.descriptionSEO || publication.title || `${publication.author.name}'s Blog`
+							publication.descriptionSEO || publication.title
 						}
 					/>
 					<meta
@@ -153,9 +153,9 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 					</div>
 
 					{allPosts.length > 0 && (
-						<div className="bg-primary-50 grid grid-cols-4 rounded-lg px-5 py-5 dark:bg-neutral-900 md:py-10">
+						<div className="bg-brand-lightest grid grid-cols-4 rounded-lg px-5 py-5 md:py-10">
 							<div className="col-span-full md:col-span-2 md:col-start-2">
-								<h2 className="text-primary-600 dark:text-primary-500 mb-5 text-center text-lg font-semibold">
+								<h2 className="text-brand mb-5 text-center text-lg font-semibold">
 									Subscribe to our newsletter for updates and changelog.
 								</h2>
 								<SubscribeForm />

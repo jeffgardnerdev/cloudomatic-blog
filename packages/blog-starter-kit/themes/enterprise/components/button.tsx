@@ -11,10 +11,11 @@ type Props = {
 	as?: string;
 	rel?: string;
 	target?: string;
+	disabled?: boolean;
 };
 
 export const Button = forwardRef<HTMLButtonElement, Props>(
-	({ label, type, icon, className, secondaryIcon, href, rel, as, target, onClick }, ref) => {
+	({ label, type, icon, className, secondaryIcon, href, rel, as, target, onClick, disabled }, ref) => {
 		let buttonClassName: string;
 
 		switch (type) {
@@ -61,9 +62,10 @@ export const Button = forwardRef<HTMLButtonElement, Props>(
 			<button
 				ref={ref}
 				onClick={onClick}
-				className={`flex flex-row items-center justify-start gap-2 rounded-full border px-2 py-2 text-sm font-semibold transition-colors duration-200 md:px-5 md:py-3 md:text-base ${buttonClassName} ${
+				className={`flex flex-row items-center justify-start gap-2 rounded-lg border p-2.5 text-[22px] leading-5 tracking-wide font-semibold disabled:cursor-not-allowed disabled:opacity-80 ${buttonClassName} ${
 					secondaryIcon ? `md:justify-between` : `md:justify-center`
 				}  ${className}`}
+				disabled={disabled}
 			>
 				<div className="flex flex-row items-center gap-2">
 					{icon && <div className="shrink-0">{icon}</div>}

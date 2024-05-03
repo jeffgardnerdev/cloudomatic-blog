@@ -14,10 +14,13 @@ module.exports = {
 				cyan: '#79FFE1',
 				primary: colors.blue,
 				background: '#F5F5F5',
+				'brand-light': '#85cdfa',
 				'brand-lighter': '#AEDEFC',
+				'brand-lightest': '#d6eefd',
 				'brand': '#191970',
 				'brand-mid': '#4F73B5',
 				'brand-gray': '#525252',
+				'brand-gray-light': '#999',
 			},
 			typography: () => ({
 				DEFAULT: {

@@ -8,7 +8,7 @@ export const Footer = () => {
 	const PUBLICATION_LOGO = publication.preferences.logo;
 	return (
 		<footer className="border-t border-t-brand-lighter pt-[50px] pb-[15px] px-[5%]">
-			<Container className="flex flex-row max-w-[900px] justify-between">
+			<Container className="flex flex-row justify-between">
 				<div className="flex flex-col gap-2.5">
 					{PUBLICATION_LOGO ? (
 						<div className="flex w-full flex-row">
@@ -25,7 +25,7 @@ export const Footer = () => {
 							{publication.title}
 						</p>
 					)}
-					<div className="text-[1.3vw] text-brand-gray">
+					<div className="text-[1.1em] text-brand-gray">
 						<p>
 							Boutique AWS consultancy for growing teams
 						</p>
@@ -86,7 +86,7 @@ export const Footer = () => {
 			</Container>
 			<Container className="mt-[70px] mb-[15px] w-full h-[1px] bg-[#e4ebf3]" />
 			<Container>
-				<p className="text-center text-brand text-[1.3vw]">
+				<p className="text-center text-brand text-[1.1em]">
 					Copyright © 2024 Cloudomatic
 				</p>
 			</Container>

@@ -77,7 +77,7 @@ export const Header = () => {
 	);
 
 	return (
-		<header className="border-b border-b-brand-lighter bg-background py-2.5 px-[5%]">
+		<header className="border-b border-b-brand-lighter bg-background py-2.5 px-[5%] sticky top-0 z-50">
 			<Container className="flex justify-between">
 				<div className="flex items-center">
 					<PublicationLogo />
