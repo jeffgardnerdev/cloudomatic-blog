@@ -27,14 +27,14 @@ export const Header = () => {
 	};
 
 	const navList = (
-		<ul className="flex flex-row items-center gap-2 text-white">
+		<ul className="flex flex-row items-center gap-5 text-brand text-[22px] font-medium">
 			{visibleItems.map((item) => (
 				<li key={item.url}>
 					<a
 						href={item.url}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="transition-200 block max-w-[200px] truncate text-ellipsis whitespace-nowrap rounded-full p-2 transition-colors hover:bg-white hover:text-black dark:hover:bg-neutral-800 dark:hover:text-white"
+						className="transition-200 block max-w-[200px] truncate whitespace-nowrap p-2 hover:text-brand-mid"
 					>
 						{item.label}
 					</a>
@@ -82,7 +82,7 @@ export const Header = () => {
 				<div className="flex items-center">
 					<PublicationLogo />
 				</div>
-				<div className="flex flex-row items-center justify-end gap-5 text-slate-300 lg:col-span-3">
+				<div className="flex flex-row items-center justify-end gap-5 lg:col-span-3">
 					<nav className="hidden lg:block">{navList}</nav>
 					<Button href="https://cal.com/cloudomatic-jeff/intro-chat" as="a" type="primary" target="_blank" label="Let's talk" className="uppercase" />
 				</div>
