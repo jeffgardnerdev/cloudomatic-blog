@@ -17,8 +17,8 @@ export const PublicationLogo = ({ isSidebar }: { isSidebar?: boolean }) => {
 	return (
 		<h1 className="relative w-full">
 			<Link
-				href={'/'}
-				aria-label={`${publication.title} home page`}
+				href={'https://cloudomatic.dev'}
+				aria-label="Cloudomatic home page"
 				className="flex items-center justify-center"
 			>
 				{PUBLICATION_LOGO ? (
